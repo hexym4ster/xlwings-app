@@ -27,7 +27,7 @@ def listcompare(): #生成重复正确返佣金号码的列表，简称正确列
             
 listcompare()
 
-def new_excel(): #生成新excel文件
+def newexcel(): #生成新excel文件
     app=xw.App(visible=False,add_book=False)
     dianxin_wb=app.books.open(dianxin_xlpath) 
     new_wb=app.books.open(yuangong_xlpath) #新excel文件先应用员工模板化excel文件
@@ -59,5 +59,5 @@ def new_excel(): #生成新excel文件
     dianxin_wb.close()
     app.quit()                                                                                                                                                                                                                                         
 
-new_excel()
+newexcel()
 print('完成！')
